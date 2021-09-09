@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="layui-v2.5.6/layui/layui.js"></script>
+    <link rel="stylesheet" href="layui-v2.5.6/layui/css/layui.css">
+</head>
+<body>
+<!--我是增加-->
+<script type="text/html" id="addHtml">
+    <form class="layui-form  layui-form-pane" action="" onsubmit="return false" lay-filter="myUpdate">
+
+
+        <label class="layui-form-label">采购类型</label>
+        <div class="layui-input-inline">
+            <select name="type">
+                <option value="1" selected="">办公用品</option>
+                <option value="2">福利用品</option>
+                <option value="3">服装</option>
+            </select>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品名称</label>
+            <div class="layui-input-inline">
+                <input type="text" name="pName" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品单位</label>
+            <div class="layui-input-inline">
+                <input type="text" name="pUnit" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品数量</label>
+            <div class="layui-input-inline">
+                <input type="text" name="pNum" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品采购人</label>
+            <div class="layui-input-inline">
+                <input type="text" name="pPerson" class="layui-input">
+            </div>
+        </div>
+        <input class="layui-input"  type="hidden" value="" name="id">
+        <button class="layui-btn layui-hide"   lay-submit lay-filter="myUpdateSubmit" id="myUpdateSubmit">立即提交</button>
+
+    </form>
+</script>
+</body>
+</html>
